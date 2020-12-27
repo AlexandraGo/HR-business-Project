@@ -1,6 +1,4 @@
 # HR-business-Project
-Employee retention prediction problem 
-
 
 **Employee retention prediction problem:**
 
