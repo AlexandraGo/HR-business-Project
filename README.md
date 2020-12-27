@@ -9,12 +9,17 @@ Hiring and retaining employees are extremely complex task that require capital, 
 - It takes around 52 days to fill a position.
 
 
-Therefore, we will try to develop a model that **could predict which employees are more likely to leave the company**. 
+Therefore, we will try to develop a model that **will predict which employees are more likely to leave the company**. 
 For this dataset, firstly we have explored the dataset with some visualization, then we created different models techinques:
- - Random Forest (This model has performed the best).
+ - Random Forest.
  - Logistic Regression.
  - SVM.
  
-The main problem encountered in this data set was an **inmbalance** dataset. For this we used the techinique SMOTE. However, at the end there there was not difference between using SMOTE teqhnique. Logistic regression had the highest AUC, unlike SVM which performed the worst.
+The main problem encountered in this data set was an **inmbalance** dataset (0:1233,1:237). To overcome this probelm we used the techinique SMOTE **Synthetic Minority Oversampling Techinique (SMOTE)**. However, at the end there there was not difference between using SMOTE teqhnique. Logistic regression performed the best with the highest AUC, unlike SVM which performed the worst. SVM model has no class separation capacity whatsoever.
+
+-- **Logistic regression AUC: 0.84%**
+-- Random Forest AUC: 0.81%
+-- SVM AUC: 0.5%
+
 Since our data was imbalace, accuracy was not the best evaluation metric. Thefore, we preferred to used AUC curve for measuring the perfomance of our models. 
 
