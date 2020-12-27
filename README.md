@@ -15,11 +15,12 @@ For this dataset, firstly we have explored the dataset with some visualization, 
  - Logistic Regression.
  - SVM.
  
-The main problem encountered in this data set was an **inmbalance** dataset (0:1233,1:237). To overcome this probelm we used the techinique SMOTE **Synthetic Minority Oversampling Techinique (SMOTE)**. However, at the end there there was not difference between using SMOTE teqhnique. Logistic regression performed the best with the highest AUC, unlike SVM which performed the worst. SVM model has no class separation capacity whatsoever.
+The main problem encountered in this data set was an **inmbalance** dataset (0:1233,1:237) for our minority class (the one we would like to predict). Working with imbalance dataset can lead to a poor performance.
+
+To overcome this problem we used the techinique SMOTE **Synthetic Minority Oversampling Techinique**. However, at the end there there was not difference between using SMOTE technique. Logistic regression performed the best with the highest AUC, unlike SVM which performed the worst. SVM model has no class separation capacity whatsoever.
 
 -- **Logistic regression AUC: 0.84%**
 -- Random Forest AUC: 0.81%
 -- SVM AUC: 0.5%
 
 Since our data was imbalace, accuracy was not the best evaluation metric. Thefore, we preferred to used AUC curve for measuring the perfomance of our models. 
-
