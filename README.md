@@ -23,7 +23,7 @@ To overcome this problem we used the techinique SMOTE **Synthetic Minority Overs
   - Random Forest AUC: 0.81%
   - SVM AUC: 0.5%
 
-Since our data was imbalace, accuracy was not the best evaluation metric. Thefore, we preferred to used AUC curve for measuring the perfomance of our models. 
+Since our data was imbalace, accuracy was not the best evaluation metric. Therefore, we preferred to used AUC curve for measuring the perfomance of our models. 
 
 To see the whole process please go to: HR_business project.ipynb 
 
